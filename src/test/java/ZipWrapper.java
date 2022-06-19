@@ -18,6 +18,7 @@ public class ZipWrapper {
     public List<String[]> getListFromCSVinZIP() {
         List<String[]> linesFromCSV = null;
 
+
         try (InputStream is = classLoader.getResourceAsStream("Desktop.zip");
              ZipInputStream zis = new ZipInputStream(is)) {
 
